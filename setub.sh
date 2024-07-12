@@ -277,7 +277,7 @@ EXPSC=$(wget -qO- ${izinsc} | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b> 🟢 NOTIFICATIONS INSTALL 🟢</b>
+<b> NOTIFICATIONS INSTALL</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -649,9 +649,9 @@ print_success "Fail2ban"
 function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
-wget -O /usr/bin/ws "https://wokszxdstore.net/ws/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://wokszxdstore.net/ws/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://wokszxdstore.net/ws/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://raw.githubusercontent.com/SETANTAZVPN/sc/main/ws/ws" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/SETANTAZVPN/sc/main/ws/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/SETANTAZVPN/sc/main/ws/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
