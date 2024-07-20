@@ -31,7 +31,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m              WELCOME TO SRICPT BY KIZARU STORE VPN             \033[0m"
+echo -e "\033[96;1m             WELCOME TO SRICPT BY SILA VPN STORE             \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
