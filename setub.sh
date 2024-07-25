@@ -811,7 +811,7 @@ if [ -f ~/.bashrc ]; then
 fi
 fi
 mesg n || true
-menu
+welcome
 EOF
 cat >/etc/cron.d/log_clear <<-END
 		8 0 * * * root /usr/local/bin/log_clear
